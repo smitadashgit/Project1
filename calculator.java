@@ -15,7 +15,10 @@ import java.util.Scanner;
            System.out.print("2. Subtraction\n");
            System.out.print("3. Multiplication\n");
            System.out.print("4. Division\n");
-           System.out.print("5. Exit\n\n");
+	   
+           System.out.print("5. display\n");
+
+           System.out.print("6. Exit\n\n");
            System.out.print("Enter Your Choice : ");
            choice = scan.next().charAt(0);
            switch(choice)
@@ -46,14 +49,16 @@ import java.util.Scanner;
 	                 res = a / b;
 	                 System.out.print("Result = " + res);
 	                 break;
+
+	      case '5' : System.out.print("Smita");
 	 
-	      case '5' : System.exit(0);
+	      case '6' : System.exit(0);
 	                 break;
 	
 	      default : System.out.print("Wrong Choice!!!");
 	                break;
 	   }
 																	            System.out.print("\n---------------------------------------\n");
-	}while(choice != 5);       
+	}while(choice != 6);       
     }
 }
